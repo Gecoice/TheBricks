@@ -1,0 +1,242 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background:url("../slike/back1.jpg") no-repeat;
+	background-size:cover;
+}
+
+:root{
+	--colorC:red;
+	--colorC2:red;
+	--colorC3:red;
+	--colorC4:red;
+}
+
+#canvas{
+	margin:0px auto;
+}
+
+.levi{
+	width:425px;
+	height:425px;
+	float:left;
+}
+.levi span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 425px;
+  height: 425px;
+  display: block;
+  box-sizing: border-box;
+
+}
+
+.levi span:nth-child(1){
+  transform:rotate(0deg);
+}
+
+.levi span:nth-child(2){
+  transform:rotate(90deg);
+}
+
+.levi span:nth-child(3){
+  transform:rotate(180deg);
+}
+
+.levi span:nth-child(4){
+  transform:rotate(270deg);
+}
+
+.levi span:before{
+  content: '';
+	position:absolute;
+  width:425px;
+  height: 2px;
+  background: #50dfdb;
+  animation: animate 2s linear infinite;
+}
+.levi #span1:before{
+		background:var(--colorC);
+}
+.levi #span2:before{
+		background:var(--colorC2);
+}
+.levi #span3:before{
+		background:var(--colorC);
+}
+.levi #span4:before{
+		background:var(--colorC2);
+}
+
+
+@keyframes animate {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+  }
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+  }
+}
+
+#sredina{
+	width:250px;
+	height:425px;
+	float:left;
+}
+.desni{
+	width:425px;
+	height:425px;
+	float:left;
+}
+.desni span{
+  position: absolute;
+  top: 0;
+  left: 675px;
+  width: 425px;
+  height: 425px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.desni span:nth-child(1){
+  transform:rotate(0deg);
+}
+
+.desni span:nth-child(2){
+  transform:rotate(90deg);
+}
+
+.desni span:nth-child(3){
+  transform:rotate(180deg);
+}
+
+.desni span:nth-child(4){
+  transform:rotate(270deg);
+}
+
+.desni span:before{
+  content: '';
+	position:absolute;
+  width:425px;
+  height: 2px;
+  background: #50dfdb;
+  animation: animatee 2s linear infinite;
+}
+.desni #span5:before{
+	background:var(--colorC3);
+}
+.desni #span6:before{
+	background:var(--colorC4);
+}
+.desni #span7:before{
+	background:var(--colorC3);
+}
+.desni #span8:before{
+	background:var(--colorC4);
+}
+
+@keyframes animatee {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+  }
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+  }
+}
+
+#glavni{
+	position:absolute;
+	display:flex;
+	width:1110px;
+	height:580px;
+	top: 50%;
+	left: 50%;
+	margin: -290px 0 0 -555px;
+	/*border:1px solid red;*/
+
+}
+#naslov{
+	width:1110px;
+	height:180px;
+	margin:0 auto;
+	vertical-align: middle;
+	line-height: 190px;
+	/*border:1px solid red;*/
+
+}
+.centered{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+.pisava{
+	/*margin-left:5px;*/
+	color:white;
+	font-family:myFont;
+	text-align:center;
+}
+.pisava2{
+	/*margin-left:5px;*/
+	color:white;
+	font-size:20px;
+	font-family:myFont;
+	text-align:center;
+	margin-top:30px;
+	letter-spacing: 1px;
+}
+.pisavaN{
+	/*margin-left:5px;*/
+	color:white;
+	font-family:myFont;
+	text-align:center;
+	font-size:150px;
+}
+.points{
+	color:white;
+	font-family:myFont;
+	text-align:center;
+	margin-top:30px;
+	font-size: 40px;
+}
+mark{
+	background-color:transparent;
+	color:white;
+}
+
+@font-face{
+	font-family:myFont;
+	/*src: url(../fonts/arcade3.ttf);*/
+	src: url(../fonts/trench.otf);
+}
